@@ -22,6 +22,8 @@ Su funcionamiento se basa en una tabla hash, distribuida a lo largo de varios eq
 
 Cada dato introducido en Memcached tiene un tiempo de expiración; pasado ese tiempo, el servicio Memcached lo elimina, dejando ese espacio para el almacenamiento de otro objeto.
 
+![](https://github.com/MariaOrgaz/swap1415/blob/master/trabajo/imagenes/1.png)
+
 ### ¿Quiénes usan memcached? ###
 
 El desarrollo inicial y sus posteriores mejoras nacen como una necesidad de incrementar velocidades de respuesta para las peticiones web, en sitios de tráfico masivo.

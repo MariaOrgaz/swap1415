@@ -233,9 +233,3 @@ Si volvemos a ejecutar la orden obtendremos el resultado deseado
 [http://luauf.com/2009/06/08/%C2%BFque-es-memcached/](http://luauf.com/2009/06/08/%C2%BFque-es-memcached/)
 
 [http://php.net/manual/en/book.memcached.php](http://php.net/manual/en/book.memcached.php)
-
-
-
-Cosas que pueden servir...
-
-http://systemadmin.es/2008/11/estadisticas-de-memcached

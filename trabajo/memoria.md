@@ -12,7 +12,7 @@ Una vez instalados los servidores, las aplicaciones a través de una API podrán
 
 Memcached permite almacenar los resultados devueltos de una consulta a la base de datos, pero además de estos datos, se puede almacenar cualquier información que se nos ocurra, por ejemplo resultados de cálculo, información de sesión de los usuarios,etc.
 
-Memcached tiene versiones para Linux y se distribuye bajo licencia de software libre permisiva. Tambien cuanta con versiones para Windows y MacOS, si bien no son oficiales, cuenta con el apoyo de varios desarrolladores de la comunidad.
+Memcached tiene versiones para Linux y se distribuye bajo licencia de software libre permisiva. Tambien cuenta con versiones para Windows y MacOS, si bien no son oficiales, cuenta con el apoyo de varios desarrolladores de la comunidad.
 
 ### Funcionamiento ###
 
@@ -122,7 +122,7 @@ Obtiene todos los resultados restantes de la última petición.
 
 
 ### Instalación ###
-**1.Prerequisitos** 
+**1.Pre-requisitos** 
 	
 - Tener instalado Ubuntu 14.0
 - Tener instalado LAMP (PHP +MySQL + Apache)
@@ -130,7 +130,7 @@ Obtiene todos los resultados restantes de la última petición.
 Desde la versión 0.2.0 de Mencached se requiere la versión 5.2.0 o superior de PHP.
 
 **2.Instalación de mencached** 
-La instalación de memecached se realiza de forma diferente dependedisendo del sistema:
+La instalación de memcached se realiza de forma diferente dependiendo del sistema:
 
 - Ubuntu/Debian: `sudo apt-get install memcached`
 
@@ -142,13 +142,13 @@ Veamos el proceso detallado de instalación en Ubuntu 14.04.2 :
 
 Instalamos Memcached:
 
-Para la instalacion de memcached usamos la librería php5-memcached.
+Para la instalación de memcached usamos la librería php5-memcached.
 
 `sudo apt-get install php5-memcached memcached`
 
 ![](https://github.com/MariaOrgaz/swap1415/blob/master/trabajo/imagenes/foto%20(2).png)
 
-Para comprobar que se ha instalado correctamente creamos un archivo llamado info con el siguiente contenido:
+Para comprobar que se ha instalado correctamente creamos un archivo llamado info.php con el siguiente contenido:
 
     <html>
     <body>
@@ -157,7 +157,7 @@ Para comprobar que se ha instalado correctamente creamos un archivo llamado info
     </body>
     </html>
 
-Desde el navegador comprobamos la ejecución ejecutando la url
+Desde el navegador comprobamos la ejecución ejecutando la url:
 `localhost\info.php`
 
 ![](https://github.com/MariaOrgaz/swap1415/blob/master/trabajo/imagenes/foto%20(4).png)

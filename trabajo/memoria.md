@@ -40,7 +40,7 @@ Memcached almacena datos en el caché y evita así tener que acceder a la base d
 
 ### Instrucciones usadas por memcached###
 
-Algunos comandos de almacenamiento implican el envío de un valor de expiración (relativo a un ítem o a una operación solicitada por el cliente) al servidor. En todos los casos, el valor real enviado podría ser en tiempo Unix (un valor de tipo integer con el número de segundos transcurridos desde el 1 de enero de 1970), o el número de segundos comenzando desde el instante actual. En este caso, el número no debe exceder de 60*60*24*30 (que corresponde al número de segundos en 30 días).
+Algunos comandos de almacenamiento implican el envío de un valor de expiración (relativo a un ítem o a una operación solicitada por el cliente) al servidor. En todos los casos, el valor real enviado podría ser en tiempo Unix (un valor de tipo integer con el número de segundos transcurridos desde el 1 de enero de 1970), o el número de segundos comenzando desde el instante actual. En este caso, el número no debe exceder de 60* 60* 24* 30 (que corresponde al número de segundos en 30 días).
 
 Si se excede el valor del tiempo de expiración, el servidor lo considerará como tiempo Unix en lugar del número de segundos desde el instante actual.
 
@@ -49,8 +49,8 @@ Si el valor de la expiración es 0 (el predeterminado), el ítem nunca caducará
 
 **addServer(string $host , int $port [, int $weight = 0 ])**
 
-Agrega el servidor especificado al grupo de servidores. No se establece la conexión en ese momento. Si vamos a añadir más de un servidor es recomendable usar addServers(), pues así la actualización de las estructuras interas se realizará una sola vez.
-Es posible añadir el mismo servidor varias veces pues no hay control sobre la duplicación de estos. En su lugar podemos usar la opción del "peso" para aumentar la ponderación de selección de dicho servidor.
+Agrega el servidor especificado al grupo de servidores. No se establece la conexión en ese momento. Si vamos a añadir más de un servidor es recomendable usar addServers(), pues así la actualización de las estructuras internas se realizará una sola vez.
+Es posible añadir el mismo servidor varias veces pues no hay control sobre la duplicación de estos. En su lugar podemos usar la opción "weight" para aumentar la ponderación de selección de dicho servidor.
 
 
 
@@ -98,7 +98,7 @@ Devuelve el ítem que fue previamente guardado bajo la clave dada por key.
 
 **getStats()**
 
-Devuelve un array que contiene el estado de todos los servidores de memcache disponibles.
+Devuelve un array que contiene el estado de todos los servidores de memcached disponibles.
 
 **fetch()**
 
